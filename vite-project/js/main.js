@@ -1,23 +1,33 @@
 import '../styles/style.css'
-import javascriptLogo from '../javascript.svg'
 import { setupCounter } from './counter.js'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+const DOMSelectors = {
+  cards: document.querySelector("#products"),
 
-setupCounter(document.querySelector('#counter'))
+}
+
+
+const products = [
+  {
+    name: "donuts",
+    image: "https://cdn.discordapp.com/attachments/970059739318849597/1049201473831059466/donuts.jpg"
+  },
+  {
+    name: "chips",
+    image: `https://cdn.discordapp.com/attachments/970059739318849597/1049201473617141872/chips.jpg`
+  }
+]
+
+
+products.forEach(element => {
+  DOMSelectors.cards.insertAdjacentHTML("beforebegin",
+    `
+  <div id=card>
+  <img src=${element.image})image}>
+  <h1> this is ${element.name} </h1>
+  </img>
+  </div>
+  `
+  )
+})
+
