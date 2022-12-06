@@ -4,28 +4,39 @@ body {
     padding: 0%;
     box-sizing: border-box;
     font-size: 62.5%;
-    background-color: rgb(72, 104, 87);
+    background-color: rgb(120, 89, 131);
     font-family: 'Space Mono', monospace;
 }
 
 h1 {
-    font-size: 5rem;
-    color: rgb(154, 134, 96);
+    font-size: 3rem;
+    color: rgb(113, 216, 109);
 }
 
 #products {
     display: flex;
+    padding: 1rem;
+    box-sizing: content-box;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 #card {
-    border: 1rem black solid;
-    width: 50vw;
-    margin: auto;
+    border: 0.5rem black solid;
+    width: 30vw;
+    height: 30vh;
+    margin: 1rem;
     text-align: center;
+    padding: 1rem;
 }
 
 img {
-    display: flex;
-    width: 45vw;
+    width: 25vw;
+    height: 20vh;
+    object-fit: contain;
     margin: auto;
+}
+button {
+    height: 2rem;
+
 }
