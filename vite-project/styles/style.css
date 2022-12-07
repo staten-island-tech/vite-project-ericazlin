@@ -4,13 +4,13 @@ body {
     padding: 0%;
     box-sizing: border-box;
     font-size: 62.5%;
-    background-color: rgb(120, 89, 131);
+    background-color: rgb(67, 76, 67);
     font-family: 'Space Mono', monospace;
 }
 
 h1 {
     font-size: 3rem;
-    color: rgb(113, 216, 109);
+    color: rgb(255, 255, 255);
 }
 
 #products {
@@ -23,6 +23,8 @@ h1 {
 
 #card {
     border: 0.5rem black solid;
+    border-radius: 4%;
+    background-color: rgb(43, 49, 43);
     width: 30vw;
     height: 30vh;
     margin: 1rem;
