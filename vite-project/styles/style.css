@@ -9,6 +9,7 @@ body {
 }
 :root {
     --greenish-gray: rgb(67, 76, 67);
+    --pinkish-pink: rgb(173, 117, 117) ;
 
 
     /* typograph */
@@ -34,7 +35,7 @@ h1 {
 }
 
 #card {
-    border: 0.5rem black solid;
+    border: 0.4rem black solid;
     border-radius: 4%;
     background-color: rgb(43, 49, 43);
     width: 30vw;
@@ -53,3 +54,15 @@ img {
 button {
     height: 2rem;
 }
+
+  .greenMode {
+    background-color: var( --greenish-gray);
+  }
+  
+  .pinkMode {
+    background-color: var(--pinkish-pink);
+    color:rgb(66, 47, 47);
+    
+  }
+
+  

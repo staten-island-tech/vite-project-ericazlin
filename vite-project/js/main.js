@@ -34,3 +34,14 @@ secondHalf.forEach(card => {
   )
 })
 
+
+//theme buttons
+document.getElementById("themebtton").addEventListener("click", function () {
+  if (document.body.classList.contains("pinkMode")) {
+      document.body.classList.add("greenMode");
+      document.body.classList.remove("pinkMode");
+  } else {
+      document.body.classList.add("pinkMode");
+      document.body.classList.remove("greenMode");
+  }
+});
