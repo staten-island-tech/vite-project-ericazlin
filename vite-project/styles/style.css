@@ -4,21 +4,33 @@ body {
     padding: 0%;
     box-sizing: border-box;
     font-size: 62.5%;
-    background-color: rgb(67, 76, 67);
+    background-color: var(--greenish-gray);
     font-family: 'Space Mono', monospace;
+}
+:root {
+    --greenish-gray: rgb(67, 76, 67);
+
+
+    /* typograph */
+    --h1: 7.594rem;
+    --h2: 5.063rem;
+    --h3: 3.375rem;
+    --h4: 2.25rem;
+    --h5: 1.5rem;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: var(--h3);
     color: rgb(255, 255, 255);
 }
 
-#products {
-    display: flex;
+.everything
+ {
     padding: 1rem;
-    box-sizing: content-box;
-    flex-wrap: wrap;
-    align-items: center;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: row;
 }
 
 #card {
@@ -26,7 +38,7 @@ h1 {
     border-radius: 4%;
     background-color: rgb(43, 49, 43);
     width: 30vw;
-    height: 30vh;
+    height: 28vh;
     margin: 1rem;
     text-align: center;
     padding: 1rem;
@@ -34,11 +46,10 @@ h1 {
 
 img {
     width: 25vw;
-    height: 20vh;
+    height: 16vh;
     object-fit: contain;
     margin: auto;
 }
 button {
     height: 2rem;
-
 }
