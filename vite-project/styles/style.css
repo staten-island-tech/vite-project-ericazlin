@@ -34,13 +34,20 @@ h1 {
     flex-direction: row;
 }
 
+#title {
+    font-size: 6rem;
+    text-align: center;
+    /* margin-top: 2rem; */
+    
+}
+
 #card {
     border: 0.4rem black solid;
     border-radius: 4%;
-    background-color: rgb(43, 49, 43);
+    /* background-color: rgb(43, 49, 43); */
     width: 30vw;
     height: 28vh;
-    margin: 1rem;
+    margin: 0.6rem;
     text-align: center;
     padding: 1rem;
 }
@@ -55,14 +62,24 @@ button {
     height: 2rem;
 }
 
+#bored {
+    margin: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#themebtton {
+    margin: 2rem;
+    text-align: center;
+}
+
   .greenMode {
     background-color: var( --greenish-gray);
+    color:rgb(0, 0, 0);
   }
   
   .pinkMode {
     background-color: var(--pinkish-pink);
-    color:rgb(66, 47, 47);
+    color:rgb(255, 255, 255);
     
   }
-
-  
