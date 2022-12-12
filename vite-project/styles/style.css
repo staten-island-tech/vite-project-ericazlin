@@ -25,6 +25,10 @@ h1 {
     color: rgb(255, 255, 255);
 }
 
+.everything2 {
+    display: flex;
+}
+
 .everything
  {
     padding: 1rem;
@@ -32,6 +36,9 @@ h1 {
     justify-content:flex-start;
     align-items: flex-start;
     flex-direction: row;
+    border: 0.4rem black solid;
+    margin: .5rem;
+    width: fit-content;
 }
 
 #title {
@@ -51,6 +58,15 @@ h1 {
     text-align: center;
     padding: 1rem;
 }
+
+#filter {
+    border: 0.4rem black solid;
+    border-radius: 4%;
+    width: 30vw;
+    padding: 1rem;
+    margin: 0.6rem;
+}
+
 
 img {
     width: 25vw;
@@ -83,3 +99,4 @@ button {
     color:rgb(255, 255, 255);
     
   }
+

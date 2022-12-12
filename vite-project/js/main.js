@@ -4,6 +4,8 @@ import { products } from './products.js'
 const DOMSelectors = {
   products1: document.getElementById("products1"),
   products2: document.getElementById("products2"),
+  btn: document.querySelector(".btn"),
+  filter: document.getElementById("filter"),
 }
 
 const firstHalf = products.slice(0, products.length / 2);
@@ -14,9 +16,9 @@ firstHalf.forEach(card => {
     `
     <div id=card>
     <img src=${card.image}>
-    <h1> this is ${card.name} </h1>
+    <h1 id="text"> this is ${card.name} </h1>
     </img>
-    <button id="btn"><label>Add to Cart</label></button>
+    
     </div>
     `
   )
@@ -26,9 +28,9 @@ secondHalf.forEach(card => {
     `
     <div id=card>
     <img src=${card.image}>
-    <h1> this is ${card.name} </h1>
+    <h1 id="text"> this is ${card.name} </h1>
     </img>
-    <button id="btn"><label>Add to Cart</label></button>
+    
     </div>
     `
   )
