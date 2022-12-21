@@ -4,9 +4,10 @@ body {
     padding: 0%;
     box-sizing: border-box;
     font-size: 62.5%;
-    background-color: var(--greenish-gray);
+    background-color: var(--card) ;
     font-family: 'Space Mono', monospace;
 }
+
 :root {
     --greenish-gray: rgb(84, 127, 84);
     --pinkish-pink: rgb(173, 117, 117) ;
@@ -42,20 +43,23 @@ h1 {
     flex-direction: row;
     border: 0.4rem black solid;
     margin: 1.5rem;
+    border: 0.4rem --text;
+    margin: .5rem;
+    width: fit-content;
 }
 
 #title {
     font-size: 6rem;
     text-align: center;
     color: var(--text);
-    /* margin-top: 2rem; */
+    margin-top: 4rem; 
     
 }
 
 #card {
-    border: 0.4rem black solid;
+    border: 0.4rem black ;
     border-radius: 4%;
-    background-color: var(--card) ;
+    background-color: var(--card);
     width: 30vw;
     height: 28vh;
     margin: 0.6rem;
@@ -67,6 +71,7 @@ h1 {
     border: 0.4rem black solid;
     width: 90vw;
     height: 13vh;
+    width: 30vw;
     padding: 1rem;
     margin: auto;
 }
@@ -106,4 +111,3 @@ button {
     --card: rgb(198, 163, 163); 
     
   }
-
