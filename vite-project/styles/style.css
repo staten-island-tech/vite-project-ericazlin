@@ -53,7 +53,7 @@ h1 {
     font-size: 6rem;
     text-align: center;
     color: var(--text);
-    margin-top: 4rem; 
+    padding: 1rem;
     
 }
 

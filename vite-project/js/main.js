@@ -10,6 +10,7 @@ const DOMSelectors = {
   btn: document.querySelector(".btn"),
   filter: document.getElementById("filter"),
   doofBtn: document.getElementById("doofBtn"),
+  existBtn: document.getElementById("existBtn"),
 }
 
 function filteringBool(productAttr) {
@@ -66,6 +67,11 @@ filteringBool("exists")
 DOMSelectors.doofBtn.addEventListener("click", function () {
   clearProducts()
   filteringBool("food")
+  })
+
+DOMSelectors.existBtn.addEventListener("click", function () {
+  clearProducts()
+  filteringBool("exists")
   })
 
 //theme buttons
