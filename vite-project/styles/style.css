@@ -44,7 +44,8 @@ h1 {
     border: 0.4rem black solid;
     margin: 1.5rem;
     border: 0.4rem --text;
-    margin: .5rem;
+    margin: auto;
+    margin-top: 1rem;
     width: fit-content;
 }
 
