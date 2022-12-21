@@ -11,6 +11,7 @@ body {
     --greenish-gray: rgb(84, 127, 84);
     --pinkish-pink: rgb(173, 117, 117) ;
 
+    --card: rgb(141, 169, 138);
 
     /* typograph */
     --h1: 7.594rem;
@@ -20,13 +21,16 @@ body {
     --h5: 1.5rem;
 }
 
+
+
 h1 {
     font-size: var(--h3);
     color: var(--text);
 }
 
 .everything2 {
-    display: flex;
+    display: block;
+    justify-content: space-around;
 }
 
 .everything
@@ -37,8 +41,7 @@ h1 {
     align-items: flex-start;
     flex-direction: row;
     border: 0.4rem black solid;
-    margin: .5rem;
-    width: fit-content;
+    margin: 1.5rem;
 }
 
 #title {
@@ -62,10 +65,10 @@ h1 {
 
 #filter {
     border: 0.4rem black solid;
-    border-radius: 4%;
-    width: 30vw;
+    width: 90vw;
+    height: 13vh;
     padding: 1rem;
-    margin: 0.6rem;
+    margin: auto;
 }
 
 
