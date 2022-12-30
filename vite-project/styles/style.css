@@ -1,7 +1,7 @@
 html,
 body {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
     background-color: var(--card) ;
@@ -42,10 +42,7 @@ h1 {
     align-items: flex-start;
     flex-direction: row;
     border: 0.4rem black solid;
-    margin: 1.5rem;
-    border: 0.4rem --text;
-    margin: auto;
-    margin-top: 1rem;
+    margin: 1rem auto 1.5rem;
     width: fit-content;
 }
 
@@ -54,7 +51,7 @@ h1 {
     text-align: center;
     color: var(--text);
     padding: 1rem;
-    
+
 }
 
 #card {
@@ -70,8 +67,8 @@ h1 {
 
 #filter {
     border: 0.4rem black solid;
-    width: 90vw;
-    height: 13vh;
+    text-align: center;
+    height: 18vh;
     width: 30vw;
     padding: 1rem;
     margin: auto;
@@ -85,7 +82,9 @@ img {
     margin: auto;
 }
 button {
-    height: 2rem;
+    height: 3rem;
+    background-color: var(--card);
+    border: 0.2rem solid var(--hover);
 }
 
 #bored {
@@ -100,15 +99,28 @@ button {
     text-align: center;
 }
 
+
+
   .greenMode {
     background-color:rgb(79, 131, 97) ;
     --text:rgb(0, 0, 0);
     --card: rgb(141, 169, 138);
+    --hover: rgb(178, 201, 175);
   }
-  
+
   .pinkMode {
     background-color:rgb(183, 120, 120) ;
-    --text:rgb(255, 255, 255);
-    --card: rgb(198, 163, 163); 
-    
+    --text: rgb(255, 255, 255);
+    --card: rgb(198, 163, 163);
+    --hover: rgb(222, 191, 191);
   }
+
+.button:hover {
+    background-color: var(--hover);
+    border: 0.2rem solid var(--card);
+}
+
+.button:active {
+    background-color: var(--card)s;
+    border: 0.2rem solid var(--card);
+}
