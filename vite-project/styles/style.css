@@ -4,10 +4,9 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
-    background-color: var(--card) ;
+    background-color: var(--greenish-gray);
     font-family: 'Space Mono', monospace;
 }
-
 :root {
     --greenish-gray: rgb(84, 127, 84);
     --pinkish-pink: rgb(173, 117, 117) ;
@@ -42,22 +41,31 @@ h1 {
     align-items: flex-start;
     flex-direction: row;
     border: 0.4rem black solid;
+<<<<<<< HEAD
     margin: 1rem auto 1.5rem;
     width: fit-content;
+=======
+    margin: 1.5rem;
+>>>>>>> parent of c9d2e5f (Merge branch 'main' of https://github.com/staten-island-tech/vite-project-ericazlin)
 }
 
 #title {
     font-size: 6rem;
     text-align: center;
     color: var(--text);
+<<<<<<< HEAD
     padding: 1rem;
 
+=======
+    /* margin-top: 2rem; */
+    
+>>>>>>> parent of c9d2e5f (Merge branch 'main' of https://github.com/staten-island-tech/vite-project-ericazlin)
 }
 
 #card {
-    border: 0.4rem black ;
+    border: 0.4rem black solid;
     border-radius: 4%;
-    background-color: var(--card);
+    background-color: var(--card) ;
     width: 30vw;
     height: 28vh;
     margin: 0.6rem;
@@ -67,9 +75,14 @@ h1 {
 
 #filter {
     border: 0.4rem black solid;
+<<<<<<< HEAD
     text-align: center;
     height: 18vh;
     width: 30vw;
+=======
+    width: 90vw;
+    height: 13vh;
+>>>>>>> parent of c9d2e5f (Merge branch 'main' of https://github.com/staten-island-tech/vite-project-ericazlin)
     padding: 1rem;
     margin: auto;
 }
@@ -110,6 +123,7 @@ button {
 
   .pinkMode {
     background-color:rgb(183, 120, 120) ;
+<<<<<<< HEAD
     --text: rgb(255, 255, 255);
     --card: rgb(198, 163, 163);
     --hover: rgb(222, 191, 191);
@@ -124,3 +138,10 @@ button {
     background-color: var(--card)s;
     border: 0.2rem solid var(--card);
 }
+=======
+    --text:rgb(255, 255, 255);
+    --card: rgb(198, 163, 163); 
+    
+  }
+
+>>>>>>> parent of c9d2e5f (Merge branch 'main' of https://github.com/staten-island-tech/vite-project-ericazlin)
