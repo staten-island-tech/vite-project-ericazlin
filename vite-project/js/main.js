@@ -23,44 +23,19 @@ const DOMSelectors = {
     bakedBtn: document.getElementById("bakedBtn"),
 }
 
-const filters = [
-    "foodBtn",
-    "existsBtn",
-    "frozenBtn",
-    "snackBtn",
-    "freshBtn",
-    "chemicalsBtn",
-    "hotFoodBtn",
-    "carPartsBtn",
-    "drinksBtn",
-    "coldFoodBtn",
-    "candyBtn",
-    "bakedBtn",
-]
 function filteringBool(productAttr) {
 
     const productsFiltered = products.filter(product => product[productAttr] == true)
 
-    if (productsFiltered.length = 4) {
-        console.log(productsFiltered)
-        const firstHalf = productsFiltered.map(0,1)
-        console.log(firstHalf)
-        const secondHalf = productsFiltered[2]
-        const thirdHalf = productsFiltered[3]
-        puttingItOn(firstHalf, secondHalf, thirdHalf)
-    }
 
-    else {
-        const firstHalf = productsFiltered.slice(0, Math.ceil(productsFiltered.length / 3));
-        const secondHalf = productsFiltered.slice(Math.ceil(productsFiltered.length / 3), 2 * Math.ceil(productsFiltered.length / 3));
-        const thirdHalf = productsFiltered.slice(2 * Math.ceil(productsFiltered.length / 3));
-        puttingItOn(firstHalf, secondHalf, thirdHalf)
-    }
+    const firstHalf = productsFiltered.slice(0, Math.ceil(productsFiltered.length / 3));
+    const secondHalf = productsFiltered.slice(Math.ceil(productsFiltered.length / 3), 2 * Math.ceil(productsFiltered.length / 3));
+    const thirdHalf = productsFiltered.slice(2 * Math.ceil(productsFiltered.length / 3));
 
-    function puttingItOn (firstHalf, secondHalf, thirdHalf) {
-        firstHalf.forEach(card => {
-            DOMSelectors.products1.insertAdjacentHTML("afterbegin",
-                                                      `
+
+    firstHalf.forEach(card => {
+        DOMSelectors.products1.insertAdjacentHTML("afterbegin",
+                                                  `
       <div id=card>
       <img src=${card.image}>
       <h1 id="text"> this is ${card.name} </h1>
@@ -69,10 +44,10 @@ function filteringBool(productAttr) {
       </div>
       `
       )
-        })
-        secondHalf.forEach(card => {
-            DOMSelectors.products2.insertAdjacentHTML("afterbegin",
-                                                      `
+    })
+    secondHalf.forEach(card => {
+        DOMSelectors.products2.insertAdjacentHTML("afterbegin",
+                                                  `
       <div id=card>
       <img src=${card.image}>
       <h1 id="text"> this is ${card.name} </h1>
@@ -81,10 +56,10 @@ function filteringBool(productAttr) {
       </div>
       `
       )
-        })
-        thirdHalf.forEach(card => {
-            DOMSelectors.products3.insertAdjacentHTML("afterbegin",
-                                                      `
+    })
+    thirdHalf.forEach(card => {
+        DOMSelectors.products3.insertAdjacentHTML("afterbegin",
+                                                  `
       <div id=card>
       <img src=${card.image}>
       <h1 id="text"> this is ${card.name} </h1>
@@ -92,9 +67,8 @@ function filteringBool(productAttr) {
 
       </div>
       `
-
       )
-        })}
+    })
 }
 
 function clearProducts() {
