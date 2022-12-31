@@ -213,7 +213,7 @@ const products = [
         food: true,
         exists: true,
         frozen: false,
-        snack: false,
+        snack: true,
         fresh: false,
         chemicals: false,
         hotFood: false,
@@ -277,7 +277,7 @@ const products = [
         food: true,
         exists: true,
         frozen: false,
-        snack: false,
+        snack: true,
         fresh: false,
         chemicals: false,
         hotFood: false,
@@ -590,6 +590,7 @@ const products = [
         candy: false,
         baked: false,
     },
+    
 ]
 
 
